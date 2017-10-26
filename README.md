@@ -151,8 +151,7 @@ iOS 11 只兼容 64-bit 设备，也就是搭载 A7 以上处理器的设备. �
 # 五、APP 适配 iOS 11 && iPhone X
 
 - 发现某些界面tableView的sectionHeader、sectionFooter高度与设置不符的问题.
- 
- ![](res/Simulator Screen Shot - iPhone X - 2017-10-23 at 10.37.20 SectionHeader.png)
+  ![](res/Simulator Screen Shot - iPhone X - 2017-10-23 at 10.37.20 SectionHeader.png)
   
   在iOS11中如果不实现
 		
@@ -168,8 +167,7 @@ iOS 11 只兼容 64-bit 设备，也就是搭载 A7 以上处理器的设备. �
   
   
 - 如果你使用了Masonry，那么你需要适配safeArea
-  
- ![](res/Simulator Screen Shot - iPhone X - 2017-10-24 at 10.45.20 SafeArea.png)
+  ![](res/Simulator-Screen-Shot-iPhoneX-2017-10-24-SafeArea.png)
   
 		- (void)viewDidAppear:(BOOL)animated{
     		[self setUpContraint]; // v
@@ -184,8 +182,7 @@ iOS 11 只兼容 64-bit 设备，也就是搭载 A7 以上处理器的设备. �
     
 
 - UISearchBar	的 UISearchBarBackground 高度默认变成 56。如果自定义的SearchBar的高度小于56 ，会出现SerachBar部分被遮挡。
- 
- ![](res/Simulator Screen Shot - iPhone X - 2017-10-23 at 10.37.20 SectionHeader.png)
+  ![](res/Simulator Screen Shot - iPhone X - 2017-10-23 at 10.37.20 SectionHeader.png)
   	
 		CGFloat searchBarHeight = 44.0;
     	if (@available(iOS 11.0, *)){
